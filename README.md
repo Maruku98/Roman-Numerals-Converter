@@ -2,7 +2,7 @@
 Convert decimal numbers to Roman numerals :one: :two: :three:
 
 ## Overview
-We all learned about Roman numerals back at school, right? And, though being that old, they have survived the passing of time among all these years.  
+We all learned about Roman numerals back at school, didn't we? And, though being that old, they have survived the passing of time among all these years.  
 Using JavaScript, I developed a complex algorithm that converts any decimal number below 4,000 to Roman numerals. There's even a click-to-copy button!
 
 ## PROGRAMMING LANGUAGES USED
