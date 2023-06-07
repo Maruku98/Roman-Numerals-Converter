@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+:root {
+    --sailorBlue: hsl(205, 47%, 42%);
+    --magenta: hsl(300, 100%, 38%);
+    --grey: hsl(0, 0%, 95%);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(Assets/unicode.futurab.ttf);
+}
+
+@font-face {
+    font-family: textFont;
+    src: url(Assets/Poppins-Regular.ttf);
+}
+
+h1, h2, h3 {
+    font-family: titleFont;
+}
+
+main {
+    width: clamp(600px, 50%, 50%);
+    margin: 7rem auto;
+    padding: 5rem;
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+#main-title {
+    margin-bottom: 20rem;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    border-bottom: 10px solid var(--magenta);
+}
+
+#important-notes {
+    margin-bottom: 24rem;
+}
+
+.subtitle {
+    width: 60%;
+    margin: 0 auto 7rem auto;
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid var(--magenta);
+}
+
+#notes {
+    font-family: textFont;
+    font-size: 1.7rem;
+    list-style-type: none;
+}
+
+#notes li {
+    margin-bottom: 4rem;
+    padding: 8px;
+    text-align: justify;
+    border-left: 3px solid var(--sailorBlue);
+}
+
+#input-field {
+    margin-bottom: 10rem;
+}
+
+#input-container {
+    position: relative;
+}
+
+#converter {
+    height: 8rem;
+    padding-left: 1.5rem;
+    border: 2px solid  var(--sailorBlue);
+    border-radius: 5px;
+    font-family: textFont;
+    font-size: 2rem;
+    caret-color: var(--sailorBlue);
+    cursor: initial;
+}
+
+#copy-icon {
+    color: var(--sailorBlue);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 4rem;
+    border: none;
+    background-color: inherit;
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+#error-icon {
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+    color: red;
+    visibility: hidden;
+}
+
+#error-message {
+    margin: 1rem 0 7rem 0;
+    font-family: textFont;
+    font-size: 1.8rem;
+    color: red;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    font-size: 2rem;
+    font-family: textFont;
+    padding-inline: 8rem;
+}
+
+.btn:is(:focus, :hover, :active) {
+    border: none;
+    transform: scale(0.95);
+}
+
+.curiosities {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 3fr;
+    gap: 5rem;
+    margin: 10rem 0;
+    padding: 3rem;
+    border: 2px solid  var(--sailorBlue);
+    border-bottom: 8px solid  var(--sailorBlue);
+    border-radius: 10px;
+}
+
+.curiosities-photo {
+    height: 100%;
+    object-fit: cover;
+}
+
+.curiosities-title {
+    margin-bottom: 3rem;
+}
+
+.curiosities p {
+    text-align: justify;
+}
+
+.curiosities:hover {
+    background-color: hsl(205, 47%, 92%);
+}
+
+@media (max-width: 650px) {
+    :root {
+        font-size: 7px;
+    }
+
+    main {
+        width: clamp(400px, 50%, 600px)
+    }
+
+    #button-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    #copy-icon {
+        right: 10px;
+        top: 15px;
+    }
+
+    .curiosities {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        gap: 5rem;
+        padding: 3rem;
+    }
+}

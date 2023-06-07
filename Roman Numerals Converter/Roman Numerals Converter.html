@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles-Roman Numerals Converter.css">
+    <link rel="icon" href="Assets\two.ico">
+    <title>Roman Numerals Converter</title>
+</head>
+<body>
+  <main>
+    <h1 id="main-title" class="text-center">Decimal to Roman Numerals Converter</h1>
+
+    <!-- NOTES SECTION -->
+    <section id="important-notes">
+        <h2 class="subtitle text-center">Important notes</h2>
+        <ul id="notes">
+            <li>This is a free Roman Numerals Converter developed by Front-End Developer Marc Parrilla.</li>
+            <li>The sophisticated algorithm that handles the conversion process was fully programmed with JavaScript.</li>
+            <li><strong>Non-numeric characters are not accepted</strong>. This will show a warning message.</li>
+            <li>Roman numerals cannot express decimal numbers.</li>
+            <li>Please note that the largest number that can be represented in Roman numerals is 3,999.</li>
+            <li>You can click the link button to copy the Roman numeral to your clipboard.</li>
+            <li>This page was designed with HTML, CSS, JavaScript, and Bootstrap.</li>
+        </ul>
+    </section>
+
+    <!-- MAIN SECTION: INPUT -->
+    <section id="input-field">
+            <h2 class="subtitle text-center">Converter</h2>
+            <div id="input-container">
+              <input id="converter" class="form-control" type="text" placeholder="Enter a decimal number below 3,999" autocomplete="false" spellcheck="false">
+              <button id="copy-icon" class="glyphicon glyphicon-link" disabled></button>
+              <span id="error-icon" class="glyphicon glyphicon-remove"></span><p id="error-message">Please enter a valid number</p>
+            </div>
+
+            <div id="button-container">
+              <button id="reset-button" class="btn btn-danger">Reset</button>
+              <div></div>                                                     <!-- Empty div to create additional space in flexbox -->
+              <button id="conversion" class="btn btn-success">Convert!</button>
+            </div>
+    </section>
+
+    <!-- CURIOSITIES SECTION-->
+    <section id="curiosities">
+        <h2 class="subtitle text-center">Did you know...?</h2>
+
+        <div class="curiosities">
+            <img class="curiosities-photo img-responsive" src="Assets\roman-empire2.jpg" alt="Roman Numerals">
+            <div class="curiosities-text">
+              <h3 class="curiosities-title">The origin of Roman numerals</h3>
+              <p>Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters from the Latin alphabet, each letter with a fixed integer value. Modern style uses only these seven:</p>
+            </div>
+        </div>
+
+        <div class="curiosities carousel slide">
+            <img class="curiosities-photo img-responsive" src="Assets\roman-empire1.jpg" alt="Roman people">
+            <div class="curiosities-text">
+              <h3 class="curiosities-title">What about 0?</h3>
+              <p>As a non-positional numeral system, Roman numerals have no "place-keeping" zeros. Furthermore, the system as used by the Romans lacked a numeral for the number zero itself (that is, what remains after 1 is subtracted from 1). The word <em>nulla</em> (the Latin word meaning "none") was used to represent 0, although the earliest attested instances are medieval. For instance Dionysius Exiguus used <em>nulla</em> alongside Roman numerals in a manuscript from 525 AD. About 725, Bede or one of his colleagues used the letter N, the initial of <em>nulla</em> or of nihil (the Latin word for "nothing") for 0, in a table of epacts, all written in Roman numerals.</p>
+            </div>
+        </div>
+
+        <div class="curiosities">
+            <img class="curiosities-photo img-responsive" src="Assets\roman-empire3.jpg" alt="Roman Senator">
+            <div class="curiosities-text">
+              <h3 class="curiosities-title">Modern use</h3>
+              <p>Some uses that are rare or never seen in English speaking countries may be relatively common in parts of continental Europe and in other regions (e.g. Latin America) that use a European language other than English. For instance:
+                Capital or small capital Roman numerals are widely used in Romance languages to denote centuries, e.g. the French <em>XVIIIe siècle</em> and the Spanish <em>siglo XVIII</em> mean "18th century". Slavic languages in and adjacent to Russia similarly favor Roman numerals (xviii век). On the other hand, in Slavic languages in Central Europe, like most Germanic languages, one writes "18." (with a period) before the local word for "century".</p>
+            </div>
+        </div>
+    </section>
+    
+  </main>
+  
+  <script src="scripts-Roman Numerals Converter.js"></script>
+</body>
+</html>
